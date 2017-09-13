@@ -22,8 +22,5 @@ https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 ## Acesso ao GitHub
 Aproveitando que estamos na pegada, crie uma conta no GitHub(https://github.com/) não vou detalhar, pois é muito simples(Nome, email).
 Já com a conta criada de cara vai ter a opção "Create a new repository", crie com o nome que desejar.
-
-
-
-
+<img width="725" alt="captura de tela 2017-09-12 as 22 59 10" src="https://user-images.githubusercontent.com/24530268/30356287-88982c32-980e-11e7-901e-611340117ceb.png">
 
