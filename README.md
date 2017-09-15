@@ -1,4 +1,4 @@
-# Introdução ao Git e GitHub
+# Introdução ao Git e GitHub ***Construção...
 
 ## O que é Git?
 Git é um sistema de controle de versões, trata-se de um "orquestrador" e organizador de código fonte, é possivel desenvolver um projeto da linguagem que for, por diversas pessoas "codando" e colaborando no mesmo projeto. É a melhor forma de manter a integridade, rastreabilidade do desenvolvimento de um projeto e até mesmo para casos de erro é possivel voltar ao estado anterior que desejar, graças á um sistema de snapshot que tira uma "foto" em todos os momentos que ocorre uma alteração, tudo isso realizado de forma automatico é nativo, funciona!!!.
