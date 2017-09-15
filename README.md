@@ -30,8 +30,77 @@ Neste exemplo criei um projeto chamado "My_eccomerce" e do voce poderá acessar 
   
 OBS: Ao criar um projeto, é preciso ter um arquivo "README.md" trata-se da descrição do seu projeto, para projetos que esta atrás de colaboradores para o seu projeto... neste momento que pode "vender"seu peixe e seria muito interessante colocar em ingles para atingir o maior numero de pessoas possiveis.
 
+## Interação com o Git
+
+Até aqui instalamos o git e criamos uma conta no GitHub e criamos nosso projeto, agorá vamos configurar o git e começar a interagir com nosso novo projeto. Neste caso estou utilizando uma maquina linux, por tanto só vai rolar linha de comando...
+
+Já na sua maquina, com os dois comando vai configurar seu nome e e-mail para termos uma configuração simplificada e depois conseguir interagir com o GitHub.
+git config --global user.name "Seu Nome"
+git config --global user.email "Seu Email"
+
+Agora vamos puxar o projeto que criamos no Github para nossa maquina loca, para isso basta pegar a url no padrão já mencionado e acrescetar .git ao final ou então no GitHub acessar a pagina principal do projeto e ir na oopção "clone or download" confome imagem mais abaixo. 
+
+No meu caso ficou assim: https://github.com/diegowribeiro/My_eccomerce.git
+
+<img width="1013" alt="captura de tela 2017-09-14 as 20 47 29" src="https://user-images.githubusercontent.com/24530268/30460571-0307c04c-998e-11e7-8be8-2409501815c0.png">
+
+Execute o comando "clone" o comando é sugestivo...
+git clone https://github.com/diegowribeiro/My_eccomerce.git
+
+<img width="692" alt="captura de tela 2017-09-14 as 20 54 23" src="https://user-images.githubusercontent.com/2453
+
+Pronto! já tem o projeto em sua maquina e pode começar a trabalhar nele... por ser um projeto publico, qualquer pessoa pode baixar seu projeto e "traballhar nele" porem só conseguem realizar modificações no seu projeto raiz se voçe permitir, caso contrario somente o dono consegue modificar de forma explicita.
+
+Alguns comandos que voce precisa dominar para interagir com o git:
+git add <arquivo> - faz com que o Git reconheça determinado arquivo, não realiza o ulpload ao projeto por exemplo.
+git commit -m "Mensagem Indentificação" - Esse comando diz que o arquivo que adicinou anterirmente esta pronto, e pode-se adicionar uma mensagem para identificar do que se trata.  
+git push - Comando que de fato realiza o "upload" do arquivo para o GitHub nesta caso.
+git status - Mostra o status do seu repositorio.
+  
+## Interagindo com o Projeto
+
+Como ja clonamos o projeto, dentro do diretorio correspondente vou criar um arquivo index.html para criar a pagina do meu eccomerce.
+
+<img width="460" alt="captura de tela 2017-09-14 as 21 16 23" src="https://user-images.githubusercontent.com/24530268/30461107-11924afc-9992-11e7-9ada-2595f9eedfae.png">
+
+Após criar o arquivo, execute o comando "git status":
+
+<img width="542" alt="captura de tela 2017-09-14 as 21 18 26" src="https://user-images.githubusercontent.com/24530268/30461143-555e6888-9992-11e7-96f9-dc2b9c8c4940.png">
+
+O proprio git diz que tem um novo arquivo, porem ele não reconhece e logo te da á sugestão de adicionar esse arquivo com o comando que já vimos "git add", muito esperto esse git não?
+
+Então, conforme orientado... executei o comando para adicionar e novamente verificar o status e olha que bonito, agora ele reconhece o arquivo:
+
+<img width="481" alt="captura de tela 2017-09-14 as 21 21 39" src="https://user-images.githubusercontent.com/24530268/30461177-c42a0a74-9992-11e7-9852-75a37c250486.png">
+
+Adicionado o arquivo, precisamos "commitar" pois só assim "salva" de fato o arquivo e em seguida já vou realizar o "push" para o GitHub:
+
+<img width="676" alt="captura de tela 2017-09-14 as 21 29 46" src="https://user-images.githubusercontent.com/24530268/30461314-e4b6a710-9993-11e7-9d6f-529f01c9d59c.png">
+
+Realizado o commit e o push com sucesso, repare que na hora que realizei o "push" ele pediu o usuario e senha do GitHub é possivel configurar para ir direto, sem solicitar essas informações mais por hora vamos tocar desta forma.
+
+Acessando a pagina do projeto la no GitHub é possivel ver o arquivo que criei:
+
+<img width="1017" alt="captura de tela 2017-09-14 as 21 33 46" src="https://user-images.githubusercontent.com/24530268/30461398-7419cfa4-9994-11e7-8577-1a3f763f19c3.png">
+
+Só para verificar como funciona a cada incremento, siga os mesmo passos até o "push" adicionando um conteudo ao "index.html":
+
+<img width="475" alt="captura de tela 2017-09-14 as 21 51 03" src="https://user-images.githubusercontent.com/24530268/30461718-e354d7ea-9996-11e7-8b02-d8f604141527.png">
 
 
+Após seguir todos os passo e enviar para o GitHub, acesse novamente a interface do projeto selecione o arquivo "index.html" > "History" e seleciona e a alteração realizada no arquivo. Desta forma é destacado somente o que foi alterado nesta etapa:
 
+<img width="1004" alt="captura de tela 2017-09-14 as 21 55 31" src="https://user-images.githubusercontent.com/24530268/30461815-81ee5cc8-9997-11e7-8ca5-bfa11d146017.png">
 
+Nesta hora que entra o comando para trabalhar com aqueles snapshots que comentei la em cima... existe mais de uma opção mais a mais "segura" é o "git revert" que é possivel passar o parametro tag que volta extamente para o estado que deseja.
+
+Nesta imagem é possivel verificar as "tags"criadas no meu projeto "My eccomerce", repare o quanto é importante documentar certinho, colocar menssagens do "commit" que faz sentido... até na hora de reverter facilita.
+
+<img width="989" alt="captura de tela 2017-09-14 as 22 15 01" src="https://user-images.githubusercontent.com/24530268/30462157-3c8fdf5a-999a-11e7-9f9f-4a1c74b38c99.png">
+
+Por ultimo, um comando que facilita a vida é o "git pull" com esse comando é possivel atualizar o seu repositorio local, imagina que tem uma equipe trabalhando no projeto a galera realizou diversas alteraçoes no projeto e voce chega no dia seguinte para trabalhar, é preciso atualizar seu repositorio local a fim de evoluir o projeto... se executar o comando "git clone" vai dar erro dizendo que o projeto já existe ou se fizer em outro local todos os dias terá diversas copias do projeto. Nesta hora que entra o git pull, ele simplesmente "sicroniza" tudo que tem no repositorio e vida que segue.
+
+Nessa pegada, voce consegue desenvolver seu sistema/projeto com o seu time centralizado em um repositorio onde todos tem acesso facilmente garantindo a integridade.
+
+Vou ficando por aqui, ainda neste mesmo tema tem questão de boas praticas para "branch" e "Git Flow" tem outros assuntos para um projeto evoluir de forma espetacular com CI/CD, mais isso é muito assunto e ainda dará inumeros posts, até o próximo.
 
