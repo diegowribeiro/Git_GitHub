@@ -52,9 +52,12 @@ git clone https://github.com/diegowribeiro/My_eccomerce.git
 Pronto! já tem o projeto em sua máquina e pode começar a trabalhar nele... por ser um projeto publico, qualquer pessoa pode baixar seu projeto e "trabalhar nele" porém só conseguem realizar modificações no seu projeto raiz se você permitir, caso contrário somente o dono consegue modificar de forma explícita.
 
 Alguns comandos que você precisa dominar para interagir com o git:
-<> git add aqr - faz com que o Git reconheça determinado arquivo, não realiza o upload ao projeto por exemplo.
-<> git commit -m "Mensagem Identificação" - Esse comando diz que o arquivo que adicionou anteriormente está pronto, e pode--se adicionar uma mensagem para identificar do que se trata.  
-<> git push - Comando que de fato realiza o "upload" do arquivo para o GitHub neste caso.
+<pre class="prettyprint">
+    <code class="lang-bsh">$ git add aqr synaptic</code>
+</pre>
+git add aqr - faz com que o Git reconheça determinado arquivo, não realiza o upload ao projeto por exemplo.
+ git commit -m "Mensagem Identificação" - Esse comando diz que o arquivo que adicionou anteriormente está pronto, e pode--se adicionar uma mensagem para identificar do que se trata.  
+ git push - Comando que de fato realiza o "upload" do arquivo para o GitHub neste caso.
  git status - Mostra o status do seu repositório.
   
 ## Interagindo com o Projeto
