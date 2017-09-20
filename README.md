@@ -53,17 +53,17 @@ Pronto! já tem o projeto em sua máquina e pode começar a trabalhar nele... po
 
 Alguns comandos que você precisa dominar para interagir com o git:
 <pre class="prettyprint">
-    <code class="lang-bsh">$ git add aqr - faz com que o Git reconheça determinado arquivo, não realiza o upload ao projeto por exemplo</code>
+    <code class="lang-bsh">$ git add <Arquivo> -> faz com que o Git reconheça determinado arquivo, não realiza o upload ao projeto por exemplo</code>
 </pre>
 <pre class="prettyprint">
-    <code class="lang-bsh">$ git commit -m "Mensagem Identificação" - Esse comando diz que o arquivo que adicionou anteriormente está pronto, e pode--se adicionar uma mensagem para identificar do que se trata</code>
+    <code class="lang-bsh">$ git commit -m "Mensagem Identificação" -> Esse comando diz que o arquivo que adicionou anteriormente está pronto, e pode--se adicionar uma mensagem para identificar do que se trata</code>
 </pre>
 <pre class="prettyprint">
-    <code class="lang-bsh">$  git push - Comando que de fato realiza o "upload" do arquivo para o GitHub neste caso.
+    <code class="lang-bsh">$  git push -> Comando que de fato realiza o "upload" do arquivo para o GitHub neste caso.
 </code>
 </pre>
 <pre class="prettyprint">
-    <code class="lang-bsh"> git status - Mostra o status do seu repositório.</code>
+    <code class="lang-bsh"> git status -> Mostra o status do seu repositório.</code>
 </pre>
  
   
