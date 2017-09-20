@@ -32,9 +32,9 @@ OBS: Ao criar um projeto, é preciso ter um arquivo "README.md" trata-se da desc
 
 ## Interação com o Git
 
-Até aqui instalamos o git e criamos uma conta no GitHub e criamos nosso projeto, agorá vamos configurar o git e começar a interagir com nosso novo projeto. Neste caso estou utilizando uma máquina linux, por tanto só vai rolar linha de comando...
+Até aqui instalamos o git e criamos uma conta no GitHub e criamos nosso projeto, agora vamos configurar o git e começar a interagir com nosso novo projeto. Neste caso estou utilizando uma máquina linux, por tanto só vai rolar linha de comando...
 
-Já na sua máquina, os dois comandos a seguir vai configurar seu nome e e-mail para assim temos uma configuração simplificada para depois conseguir interagir com o GitHub.
+Já na sua máquina, os dois comandos a seguir vai configurar seu nome e email para assim temos uma configuração simplificada para depois conseguir interagir com o GitHub.
 git config --global user.name "Seu Nome"
 git config --global user.email "Seu Email"
 
@@ -53,7 +53,7 @@ Pronto! já tem o projeto em sua máquina e pode começar a trabalhar nele... po
 
 Alguns comandos que você precisa dominar para interagir com o git:
 <pre class="prettyprint">
-    <code class="lang-bsh">$ git add "Arquivo" -> faz com que o Git reconheça determinado arquivo, não realiza o upload ao projeto por exemplo</code>
+    <code class="lang-bsh">$ git add "Arquivo" -> faz com que o Git reconheça determinado arquivo, não realiza o upload ao projeto por exemplo</code>
 </pre>
 <pre class="prettyprint">
     <code class="lang-bsh">$ git commit -m "Mensagem Identificação" -> Esse comando diz que o arquivo que adicionou anteriormente está pronto, e pode--se adicionar uma mensagem para identificar do que se trata</code>
@@ -69,7 +69,7 @@ Alguns comandos que você precisa dominar para interagir com o git:
   
 ## Interagindo com o Projeto
 
-Como já clonamos o projeto, dentro do diretorio correspondente vou criar um arquivo index.html para criar a página do meu ecommerce.
+Como já clonamos o projeto, dentro do diretório correspondente vou criar um arquivo index.html para criar a página do meu ecommerce.
 
 <img width="460" alt="captura de tela 2017-09-14 as 21 16 23" src="https://user-images.githubusercontent.com/24530268/30461107-11924afc-9992-11e7-9ada-2595f9eedfae.png">
 
@@ -102,14 +102,14 @@ Após seguir todos os passo e enviar para o GitHub, acesse novamente a interface
 
 <img width="1004" alt="captura de tela 2017-09-14 as 21 55 31" src="https://user-images.githubusercontent.com/24530268/30461815-81ee5cc8-9997-11e7-8ca5-bfa11d146017.png">
 
-Nesta hora que entra o comando para trabalhar com aqueles snapshots que comentei la em cima... existe mais de uma opção, porém a mais "segura" é o "git revert" que é possível passar o parâmetro tag que volta exatamente para o estado que deseja.
+Nesta hora que entra o comando para trabalhar com aqueles snapshots que comentei lá em cima... existe mais de uma opção, porém a mais "segura" é o "git revert" que é possível passar o parâmetro tag que volta exatamente para o estado que deseja.
 
 Nesta imagem é possível verificar as "tags" criadas no meu projeto "My ecommerce", repare o quanto é importante documentar certinho, colocar mensagens do "commit" que fazem sentido... até na hora de reverter facilita.
 
 <img width="989" alt="captura de tela 2017-09-14 as 22 15 01" src="https://user-images.githubusercontent.com/24530268/30462157-3c8fdf5a-999a-11e7-9f9f-4a1c74b38c99.png">
 
-Por último, um comando que facilita a vida é o "git pull" com esse comando é possível atualizar o seu repositório local, imagine que tem uma equipe trabalhando no projeto, ai galera realizou diversas alterações no projeto e você chega no dia seguinte para trabalhar, precisa atualizar seu repositório local a fim de evoluir o projeto certo e continuir com as novas features... se executar o comando "git clone" vai dar erro dizendo que o projeto já existe ou se fizer em outro local todos os dias terá diversas cópias do projeto. Nesta hora que entra o "git pull", ele simplesmente "sincroniza" e atualiza tudo que tem no repositório e vida que segue.
+Por último, um comando que facilita a vida é o "git pull" com esse comando é possível atualizar o seu repositório local, imagine que tem uma equipe trabalhando no projeto, ai galera realizou diversas alterações no projeto e você chega no dia seguinte para trabalhar, precisa atualizar seu repositório local a fim de evoluir o projeto certo e continuar com as novas features... se executar o comando "git clone" vai dar erro dizendo que o projeto já existe ou se fizer em outro local todos os dias terá diversas cópias do projeto. Nesta hora que entra o "git pull", ele simplesmente "sincronizar" e atualizar tudo que tem no repositório e vida que segue.
 
 Assim você consegue desenvolver seu sistema/projeto com o seu time centralizando tudo em um repositório onde todos tem acesso facilmente garantindo a integridade e é claro que não precisa ser no GitHub, pode ter um repositório on premisses, atfatory, nexus e diversas outras opções... Só não pode ter uma desculpas para versionar seu código e tornar as coisas mais ágeis e profissionais.
 
-Por hoje é só... vou ficando por aqui, ainda neste mesmo tema tem questão de boas práticas para "branch", "Git Flow" e outros assuntos para um projeto evoluir de forma espetacular com CI/CD, mais isso rende alguns posts.
+Por hoje é só... vou ficando por aqui, ainda neste mesmo tema tem questão de boas práticas para "branch", "Git Flow" e outros assuntos para um projeto evoluir de forma espetacular com CI/CD, mas isso rende alguns posts.
